@@ -1,0 +1,94 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>首页</title>
+  <meta name="description" content="伙伴计划">
+  <meta name="keywords" content="gallery">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="icon" type="image/png" href="">
+  <link rel="apple-touch-icon-precomposed" href="">
+  <meta name="apple-mobile-web-app-title" content="伙伴计划" />
+  <link rel="stylesheet" href="static/css/amazeui.css"/>
+  <link rel="stylesheet" href="static/css/main.css">
+  <script src="js/lib/avalon.min.js"></script>
+</head>
+<body class="ptr" ms-controller="main">
+<!--[if lte IE 9 ]>
+<div class="am-alert am-alert-danger ie-warning" data-am-alert>
+  <button type="button" class="am-close">&times;</button>
+  <div class="am-container">
+     上海伊墨温馨提醒：您的浏览器太古董了，妹子会无爱，<a
+          href="http://browsehappy.com/" target="_blank">还不速速换一个</a>！</div></div>
+<![endif]-->
+
+<div class="pt-w head">
+
+</div>
+<!-- 导航 start -->
+<div class="am-topbar pt-nav-2015">
+  <div class="pt-w">
+    <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-left pt-nav-st-2015">
+        <li ms-class="am-active:id=='home'"><a href="#!/"></span> 首页</a></li>
+        <li ms-class="am-active:id=='about'"><a href="#!/about"></span> 关于我们</a></li>
+        <li ms-class="am-active:id=='case'"><a href="#!/case"></span> 成功案例</a></li>
+        <li ms-class="am-active:id=='contact'"><a href="#!/contact"></span> 联系我们</a></li>
+        <li ms-class="am-active:id=='invite'"><a href="#!/invite"></span> 招聘</a></li>
+        <li ms-class="am-active:id=='team'"><a href="#!/team"></span> 团队</a></li>
+        <li ms-class="am-active:id=='notice'"><a href="#!/notice"></span> 通知公告</a></li>
+      </ul>
+  </div>
+</div>
+<!-- 导航 end -->
+
+<!-- 标识 start -->
+<div class="tips" ms-if="tips">
+  <div class="pt-w">{{tips}}</div>
+</div>
+<!-- 标识 end -->
+
+<div ms-view>
+
+</div>
+
+<!--定制 start-->
+<div class="customized">
+  <div class="pt-w">
+    <div class="am-fl">您需要订阅个性化手机客户端么？</div>
+    <div class="am-fr"><a href="javascript:void(0);" class="am-btn am-btn-success">点击这里开始定制</a></div>
+  </div>
+</div>
+<!--定制 end-->
+
+<!--搜索 start -->
+<footer>
+  <div class="pt-w">
+    <div class="am-fl">版权所有：上海伊墨科技股份有限公司  沪ICP备13028503号</div>
+    <div class="am-fr">首页 / 关于我们 / 成功案例 / 联系我们 / 招聘 / 团队</div>
+  </div>
+</footer>
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+
+
+<script>
+  require.config({
+    baseUrl:"js/lib",
+    paths:{
+      app:"../app"
+    }
+  });
+  require(["app/index/index"],function(){
+    avalon.scan();
+  });
+</script>
+
+<!--<![endif]-->
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/amazeui.min.js"></script>
+
+</body>
+</html>

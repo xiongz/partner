@@ -1,0 +1,16 @@
+<div class="team pt-w" ms-controller="team">
+    <ul class="am-avg-sm-4 am-thumbnails">
+        <li ms-repeat-teamitem="teamLst">
+            <div class="t-item">
+                <div class="t-icon"><img ms-src="teamitem.icon"></div>
+                <div class="t-content">
+                    <div class="t-title">{{teamitem.name}}</div>
+                    <div class="t-com">生日：{{teamitem.birthday}}</div>
+                    <div class="t-com">职位：{{teamitem.position}}</div>
+                    <div class="t-com">技能：{{teamitem.skill}}</div>
+                </div>
+                <a href="javascript:void(0)" class="t-btn" ms-click="see(teamitem)">点击查看</a>
+            </div>
+        </li>
+    </ul>
+</div>

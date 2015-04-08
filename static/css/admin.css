@@ -1,0 +1,371 @@
+/**
+ * admin.css
+ */
+
+ul {
+  margin-top: 0;
+}
+
+a:focus {
+  outline: none;
+}
+.admin-icon-yellow {
+  color: #ffbe40;
+}
+
+.admin-header {
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+
+.admin-header-list a:hover :after {
+  content: none;
+}
+
+.admin-main {
+  background: #f3f3f3;
+  -webkit-transition: margin-left .3s ease-in-out;
+  transition: margin-left .3s ease-in-out;
+  margin-left: 400px;
+}
+
+.admin-sidebar {
+  width: 200px;
+  min-height: 100%;
+  float: left;
+  position:fixed;
+  left: 0;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: width .3s ease-in-out;
+  /*-webkit-transform: translateX(0);*/
+  /*-ms-transform: translateX(0);*/
+  /*transform: translateX(0);*/
+}
+
+.admin-bar-close {
+  width:40px;
+  /*-webkit-transform: translateX(-360px);*/
+  /*-ms-transform: translateX(-360px);*/
+  /*transform: translateX(-360px);*/
+}
+.admin-text {
+  display: inline-block;
+  overflow: hidden;
+  transition: height .3s ease-in-out .3s;
+  height:28px;
+}
+.admin-bar-close .admin-sidebar-sub {
+  display: none;
+}
+.admin-bar-close .admin-text {
+  width: 0;
+  height: 0;
+}
+
+.admin-bar-close #admin-sidebar li a {
+  padding-left: 0;
+}
+
+.admin-sidebar-list {
+  margin-bottom: 0;
+  float:left;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  font-size: 18px;
+  background-color: #0B9C9E;
+}
+
+#admin-sidebar [class*="admin-icon"]:before {
+  background-image: url("../images/icon/sprite11.png");
+  width: 28px;
+  height: 28px;
+  margin-left: 25px;
+  margin-right: 5px;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  content: " ";
+ }
+.admin-bar-close #admin-sidebar [class*="admin-icon"]:before {
+  margin-left: 5px;
+}
+
+#admin-sidebar .admin-icon-store:before {
+  background-position: 0;
+}
+#admin-sidebar .admin-icon-commodity:before {
+  background-position: 28px;
+}
+#admin-sidebar .admin-icon-order:before {
+  background-position: 56px;
+}
+#admin-sidebar .admin-icon-consumer:before {
+  background-position: 84px;
+}
+#admin-sidebar .admin-icon-statisAnal:before {
+  background-position: 112px;
+}
+#admin-sidebar .admin-icon-online:before {
+  background-position: 140px;
+}
+#admin-sidebar .admin-icon-analysis:before {
+  background-position: 168px;
+}
+#admin-sidebar .admin-icon-valueadd:before {
+  background-position: 196px;
+}
+
+
+.admin-sidebar-list li a {
+  color: #ffffff;
+  padding: 1em 1em;
+}
+
+.admin-sidebar-list li a:hover,.admin-sidebar-list li a:active, .admin-sidebar-list > li.am-active > a, .admin-sidebar-list > li.am-active > a:hover, .admin-sidebar-list > li.am-active > a:active, .admin-sidebar-list > li.am-active > a:focus {
+  background-color: #0EC6C9;
+}
+
+.admin-sidebar-sub li a:hover,.admin-sidebar-sub li a:active, .admin-sidebar-sub > li.am-active > a,.admin-sidebar-sub > li.am-active > a:hover,.admin-sidebar-sub > li.am-active > a:active,.admin-sidebar-sub > li.am-active > a:focus {
+  background-color: #FEB300;
+}
+
+.admin-sidebar-list li:first-child {
+  border-top: none;
+}
+
+.admin-sidebar-list > li{
+  position: relative;
+  display: block;
+  margin-bottom: -1px;
+  margin-top:0 !important;
+  border-width: 1px 0;
+}
+
+.admin-sidebar-sub {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: right;
+  width:200px;
+  box-shadow: 0 16px 8px -15px #e2e2e2 inset;
+  left: 100%;
+  background-color: #333333;
+}
+
+.admin-sidebar-sub li:first-child {
+  border-top: 0;
+}
+
+.admin-collapse {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0,0,0,0.6);
+  right: -100%;
+  top: 50%;
+  margin-top: -40px;
+  border-radius: 20px 20px 20px 20px;
+  cursor: pointer;
+}
+.admin-collapse span:before {
+  content: url("../images/icon/left.png");
+  font-size: 30px;
+  height: 100%;
+  line-height: 35px;
+  display: block;
+  color:#FFFFFF;
+  text-align: center;
+}
+.admin-bar-close .admin-collapse span:before {
+  content: url("../images/icon/right.png");
+}
+
+.admin-sidebar-panel {
+  margin: 10px;
+}
+
+.admin-content {
+  width: auto;
+  overflow: hidden;
+  height: 100%;
+  background: #fff;
+}
+
+.admin-content-list {
+  border: 1px solid #e9ecf1;
+  margin-top: 0;
+}
+
+.admin-content-list li {
+  border: 1px solid #e9ecf1;
+  border-width: 0 1px;
+  margin-left: -1px;
+}
+
+.admin-content-list li:first-child {
+  border-left: none;
+}
+
+.admin-content-list li:last-child {
+  border-right: none;
+}
+
+.admin-content-table a {
+  color: #535353;
+}
+.admin-content-file {
+  margin-bottom: 0;
+  color: #666;
+}
+
+.admin-content-file p {
+  margin: 0 0 5px 0;
+  font-size: 1.4rem;
+}
+
+.admin-content-file li {
+  padding: 10px 0;
+}
+
+.admin-content-file li:first-child {
+  border-top: none;
+}
+
+.admin-content-file li:last-child {
+  border-bottom: none;
+}
+
+.admin-content-file li .am-progress {
+  margin-bottom: 4px;
+}
+
+.admin-content-file li .am-progress-bar {
+  line-height: 14px;
+}
+
+.admin-content-task {
+  margin-bottom: 0;
+}
+
+.admin-content-task li {
+  padding: 5px 0;
+  border-color: #eee;
+}
+
+.admin-content-task li:first-child {
+  border-top: none;
+}
+
+.admin-content-task li:last-child {
+  border-bottom: none;
+}
+
+.admin-task-meta {
+  font-size: 1.2rem;
+  color: #999;
+}
+
+.admin-task-bd {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.admin-content-comment {
+  margin-bottom: 0;
+}
+
+.admin-content-comment .am-comment-bd {
+  font-size: 1.4rem;
+}
+
+.admin-content-pagination {
+  margin-bottom: 0;
+}
+.admin-content-pagination li a {
+  padding: 4px 8px;
+}
+
+/*
+* user.html css
+*/
+.user-info {
+  margin-bottom: 15px;
+}
+
+.user-info .am-progress {
+  margin-bottom: 4px;
+}
+
+.user-info p {
+  margin: 5px;
+}
+
+.user-info-order {
+  font-size: 1.4rem;
+}
+
+/*
+* errorLog.html css
+*/
+
+.error-log .am-pre-scrollable {
+  max-height: 40rem;
+}
+
+/*
+* table.html css
+*/
+
+.table-main {
+  font-size: 1.4rem;
+  padding: .5rem;
+}
+
+.table-main button {
+  background: #fff;
+}
+
+.table-check {
+  width: 30px;
+}
+
+.table-id {
+  width: 50px;
+}
+
+/*
+gallery.html css
+*/
+
+.gallery-list li {
+  padding: 10px;
+}
+
+.gallery-list a {
+  color: #666;
+}
+
+.gallery-list a:hover {
+  color: #3bb4f2;
+}
+
+.gallery-title {
+  margin-top: 6px;
+  font-size: 1.4rem;
+}
+
+.gallery-desc {
+  font-size: 1.2rem;
+  margin-top: 4px;
+}
+
+/*
+ 404.html css
+*/
+
+.page-404 {
+  background: #fff;
+  border: none;
+  width: 200px;
+  margin: 0 auto;
+}
